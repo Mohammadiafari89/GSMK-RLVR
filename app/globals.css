@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1B1C22;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.1) #1B1C22;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+:root {
+  --background: 223 14% 10%;
+  /* #111319 */
+  --wrapper-bg: 225 9% 12%;
+  /* #1B1C22 */
+  --primary: 222 100% 65%;
+  /* #4C83ff */
+  --primary-hover: 222 100% 70%;
+  --text-primary: 0 0% 100%;
+  --text-secondary: 0 0% 80%;
+}
+
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--text-primary));
+}
+
+/* Update mercury colors to match new scheme */
+.bg-mercury-950 {
+  background-color: hsl(var(--primary));
+}
+
+.bg-mercury-900 {
+  background-color: hsl(var(--primary-hover));
+}
+
+.bg-mercury-100 {
+  background-color: hsl(var(--wrapper-bg));
+}
+
+.bg-mercury-30 {
+  background-color: hsl(var(--wrapper-bg));
+}
+
+.hover\:bg-mercury-900:hover {
+  background-color: hsl(var(--primary-hover));
+}
+
+.hover\:bg-mercury-100:hover {
+  background-color: hsl(225 9% 15%);
+}
+
+/* Update chat message styles */
+.message-bubble-user {
+  background-color: hsl(var(--primary));
+  color: hsl(var(--text-primary));
+}
+
+.message-bubble-agent {
+  background-color: hsl(var(--wrapper-bg));
+  color: hsl(var(--text-primary));
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-4px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes shine {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(200%);
+  }
+}
+
+.animate-shine {
+  animation: shine 3s infinite linear;
+}
