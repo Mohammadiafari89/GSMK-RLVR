@@ -1,5 +1,7 @@
 # Nibble
 
+![Alt text](images/nibble.png)
+
 Nibble is a Solana-native AI trading agent built around xAI models and RLVR-style training signals.  
 The name “Nibble” is also the mascot of the agent: a small, curious bot that constantly nibbles through order books and data streams looking for good trades.
 
