@@ -30,7 +30,7 @@ Because everything is logged as trajectories with deterministic verifiers, Nibbl
 
 Nibble is wired around a dedicated Solana token mint that acts as the focal asset for the agent:
 
-- **Nibble token mint:** `PLACEHOLDER`
+- **Nibble token mint:** `9hgx1AASXdqBT3PPRFe1R14PozpFR5zTDShBSZg8pump`
 
 Inside the system, NIBBLE shows up as a normal SPL position in the portfolio and a common routing asset in swaps, so the agent naturally trades around it as part of normal allocation and rebalancing.
 
